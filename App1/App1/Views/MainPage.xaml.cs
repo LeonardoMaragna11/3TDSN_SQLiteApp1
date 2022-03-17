@@ -30,7 +30,7 @@ namespace App1.Views
                 switch (id)
                 {
                     case (int)MenuItemType.CadastroComputador:
-                        MenuPages.Add(id, new NavigationPage(new ListaComputadorPage()));
+                        MenuPages.Add(id, new NavigationPage(new CadastroComputadorPage()));
                         break;
                     case (int)MenuItemType.ListaComputador:
                         MenuPages.Add(id, new NavigationPage(new ListaComputadorPage()));
