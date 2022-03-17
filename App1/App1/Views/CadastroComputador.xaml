@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.Views.CadastroComputador">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical">
+            <Label Text="Processador"/>
+            <Entry x:Name="txtProcessador" Placeholder="Processador"/>
+            <Label Text="USB"/>
+            <Entry x:Name="txtUSB" Keyboard="Numeric" Placeholder="USB"/>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Atualizado" HorizontalOptions="StartAndExpand"/>
+                <Switch x:Name="swtAtualizado" />
+            </StackLayout>
+            <Label Text="Data de Atualização"/>
+            <DatePicker x:Name="dtpDataAtualizacao" />
+            <Button Text="Salvar" Clicked="Button_Clicked" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

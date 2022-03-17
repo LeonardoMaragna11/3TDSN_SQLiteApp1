@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.Views.ListaComputadorPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <CollectionView ItemsSource="">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <StackLayout>
+                            <Label Text="{Binding Processador}" />
+                            <Label Text="{Binding USB}" />
+                            <Switch IsToggled="{Binding Atualizado}" />
+                            <DatePicker Date="{Binding DataAtualizacao.Date}" />
+                            <TimePicker Time="{Binding DataAtualizacao.Time}"/>
+                        </StackLayout>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
